@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alvin John Prado</title>
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    function showContent(contentId) {
+      const sections = document.querySelectorAll('.content-section');
+      sections.forEach(section => section.classList.add('hidden'));
+      document.getElementById(contentId).classList.remove('hidden');
+    }
+  </script>
+</head>
+
+<body class="bg-[#064e3b] text-white">
+
+<!-- NAVIGATION BAR -->
+<nav class="bg-[#6ee7b7] shadow-md text-white sticky top-0 z-50">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="flex h-16 items-center justify-between">
+
+      <!-- LEFT: LOGO + NAME -->
+      <div class="flex items-center space-x-3">
+        <div class="font-bold text-xl text-[#064e3b]">PAJ</div>
+        <div class="flex flex-col leading-tight">
+          <span class="text-sm font-semibold tracking-wide text-[#064e3b]">Prado, Alvin John</span>
+          <span class="text-xs text-[#064e3b]">IT Student</span>
+        </div>
+      </div>
+
+      <!-- RIGHT: NAV BUTTONS -->
+      <div class="hidden sm:flex space-x-4">
+        <button onclick="showContent('home')" class="px-4 py-2 rounded-full bg-[#10b981] text-white shadow-md hover:bg-[#059669] hover:shadow-lg active:scale-95 transition-all">Home</button>
+        <button onclick="showContent('about')" class="px-4 py-2 rounded-full bg-[#10b981] text-white shadow-md hover:bg-[#059669] hover:shadow-lg active:scale-95 transition-all">About</button>
+        <button onclick="showContent('Skills')" class="px-4 py-2 rounded-full bg-[#10b981] text-white shadow-md hover:bg-[#059669] hover:shadow-lg active:scale-95 transition-all">Skills</button>
+        <button onclick="showContent('contact')" class="px-4 py-2 rounded-full bg-[#10b981] text-white shadow-md hover:bg-[#059669] hover:shadow-lg active:scale-95 transition-all">Contact</button>
+      </div>
+
+    </div>
+  </div>
+</nav>
+
+<!-- PAGE CONTENT -->
+<div class="mt-10 text-center text-3xl font-bold space-y-8 px-4 sm:px-6 lg:px-8">
+
+  <!-- HOME SECTION -->
+  <div id="home" class="content-section">
+    <div class="flex flex-col lg:flex-row items-center lg:items-start justify-between max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mt-10 gap-10">
+
+      <!-- LEFT: INFO CARDS -->
+      <div class="flex-1 space-y-6">
+        <div class="bg-[#f5f5dc] text-gray-900 p-6 rounded-xl shadow-lg hover:scale-105 transition">
+          <h3 class="font-bold text-xl mb-2"> Career Aspirations</h3>
+          <p class="text-base">
+            As a 2nd year IT student, I aim to grow my technical skills, gain hands on experience, and build a strong foundation for a successful career in technology.
+          </p>
+        </div>
+
+        <div class="bg-[#f5f5dc] text-gray-900 p-6 rounded-xl shadow-lg hover:scale-105 transition">
+          <h3 class="font-bold text-xl mb-2"> My Expertise</h3>
+          <p class="text-base">
+            I am currently developing skills in web development, computer systems management, and troubleshooting, while learning new technologies to create efficient digital solutions.
+          </p>
+        </div>
+
+        <div class="bg-[#f5f5dc] text-gray-900 p-6 rounded-xl shadow-lg hover:scale-105 transition">
+          <h3 class="font-bold text-xl mb-2"> Future Plans</h3>
+          <p class="text-base">
+            I aspire to use my IT knowledge to create innovative projects, solve realworld problems, and continue growing as a skilled professional in the IT industry.
+          </p>
+        </div>
+      </div>
+
+      <!-- RIGHT: PROFILE IMAGE + INTRO -->
+      <div class="flex-shrink-0 flex flex-col items-center space-y-4">
+        <img src="img/portfolio.jpg" alt="Alvin John Prado" class="w-72 h-72 rounded-xl object-cover shadow-2xl border-4 border-gray-900">
+        
+        <!-- INTRO TEXT -->
+        <h2 class="text-3xl font-bold mb-3">PRADO, ALVIN JOHN</h2>
+        <p class="text-lg max-w-2xl text-center">
+          A Second Year IT Student at Arellano Jose Abad Santos University.
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ABOUT SECTION -->
+  <div id="about" class="content-section hidden">
+    <h1 class="text-2xl font-bold mb-4">About</h1>
+    <p class="text-lg max-w-2xl mx-auto">
+      Hello! I'm <span class="font-semibold">Alvin John Prado</span>, an IT student passionate about technology, design, and continuous learning.
+      I enjoy exploring new ideas, creating useful solutions, and improving my skills every day.
+      My interests include web development, design, and problem-solving.
+      In this portfolio, you’ll find my background, skills, and the projects that show my growth as an IT student.
+    </p>
+    <br>
+    <h2 class="text-2xl font-semibold mb-4">Educational Qualifications</h2>
+    <ul class="list-disc list-inside text-lg text-left max-w-xl mx-auto">
+      <li>Currently studying at Arellano University Jose Abad Santos</li>
+      <li>Graduated from Don Felix Robles Elementary School</li>
+      <li>Graduated from La Castellana National High School(Junior High)</li>
+      <li>Graduated from Pasay City North High School(Senior High)</li>
+    </ul>
+  </div>
+
+  <!-- CONTACT SECTION -->
+  <div id="contact" class="content-section hidden">
+    <h1 class="text-2xl font-semibold mb-4">Contact</h1>
+    <p>You can reach me through the following:</p>
+    <ul class="list-disc list-inside mt-2 text-lg">
+      <li>Email: <a href="mailto:pradoeidanzkie@gmail.com" class="text-blue-400 underline">pradoeidanzkie@gmail.com</a></li>
+      <li>Phone: 0995-790-2203</li>
+      <li>Facebook: Jin Prado</li>
+      <li>Instagram: @eidanzkie</li>
+      <li>TikTok: @jinprado</li>
+      <li>Follow me on social media for more updates!</li>
+    </ul>
+  </div>
+
+  <!-- SKILLS SECTION -->
+  <div id="Skills" class="content-section hidden">
+    <h1 class="text-2xl font-semibold mb-4">Skills</h1>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 text-lg">
+      <div class="p-4 bg-gray-900 rounded-lg shadow-lg">
+        <h3 class="font-bold text-xl mb-2">Technical Skills</h3>
+        <ul class="list-disc list-inside">
+          <li>HTML, CSS, JavaScript</li>
+          <li>Computer Hardware Troubleshooting</li>
+          <li>Basic Networking</li>
+          <li>Microsoft Office (Word, PowerPoint, Excel)</li>
+        </ul>
+      </div>
+
+      <div class="p-4 bg-gray-900 rounded-lg shadow-lg">
+        <h3 class="font-bold text-xl mb-2">Soft Skills</h3>
+        <ul class="list-disc list-inside">
+          <li>Communication</li>
+          <li>Teamwork</li>
+          <li>Adaptability</li>
+          <li>Time Management</li>
+        </ul>
+      </div>
+
+      <div class="p-4 bg-gray-900 rounded-lg shadow-lg">
+        <h3 class="font-bold text-xl mb-2">Personal Skills</h3>
+        <ul class="list-disc list-inside">
+          <li>Critical Thinking</li>
+          <li>Creativity</li>
+          <li>Problem Solving</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
